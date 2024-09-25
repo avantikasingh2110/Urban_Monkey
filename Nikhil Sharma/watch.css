@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -194,30 +197,119 @@ body{
 .form-container{
     width: 100%;
     .form-inner-container{
-        width: 40%;
-        border: 1px solid rgb(179, 179, 179);
-        margin: auto;
+        width: 50%;
+        max-width: 400px;
+        border: 1px solid rgb(220, 215, 215);
+        border-radius: 5px;
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
+        padding: 20px;
 
         .heading{
             h3{
                 text-align: center;
+                font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+                font-size:x-large;
+                font-weight: 700;
             }
         }
 
         .details{
+            
             p{
             text-align: center;
+            font-family: Roboto mono, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
             }
         }
 
         .lower-container{
+            
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            label{
+                font-family: roboto mono, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: smaller;
+            }
+
+            input{
+                width: 300px ;
+                height: 40px;
+                border: 1px solid rgb(220, 215, 215);
+                border-radius: 5px;
+            }
+
+            button{
+                padding: 10px 16px;
+                font-family: roboto mono, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                font-size: large;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+
+    }
+}
+
+.watch-section{
+      width: 100%;
+    .inner-watch-container{
+        margin:auto;
+        width: 70%;
+        min-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+        .filter-section{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            gap: 20px;
+
+            .inner-filter-section{
+                display:flex;
+                flex-direction:row;
+                justify-self: flex-start;
+            }
+        }
+
+        cards-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+
+            .card{
+                width: 200px;
+                height: 250px;
+                background-color: rgb(230, 228, 228);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border-radius: 5px;
+
+               .card-img>img{
+                    width: 150px;
+                    height: 150px;
+                    
+                }
+            }
         }
 
     }
