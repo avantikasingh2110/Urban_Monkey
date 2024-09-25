@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+   
+    gap: 10px;
+
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        img{
+            width: 300px;
+          
+        }
+    }
+
+    .search-section{
+        border: 1px solid grey;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 52px;
+        
+
+        .dropdown-menu{
+           
+            display: flex;
+            align-items: center;
+            height: 50px;
+            border-radius: 10px;
+            #dropdown{
+                border: none;
+            }
+            margin: 5px 10px;
+
+         }
+
+         .search-bar{
+            display: flex;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+           }
+
+           .search-button{
+            button{
+                justify-self: flex-end;
+                align-self: center;
+                background: black;
+                color: white;
+                height: 49px;
+                padding: 4px 12px;
+                border-radius: 10px;
+                
+                
+            }
+           }
+        }
+
+         .icon-container{
+           justify-self: flex-end;
+           width: 100px;
+           display: flex;
+           flex-direction: row;
+          
+           
+        
+           .icon-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+           i{
+            transform: scale(1.3);
+           }
+         }
+
+    }
+   
+}
+}
+
+.header2{
+    display: flex;
+    height:70px ;
+    
+    background-color:rgb(211, 211, 211);
+    font-size:18px;
+    font-family: nunito, "Helvetica Neue", "Helvetica";
+    font-weight: 300;
+
+    .nav2-container{
+       
+        width: 80%;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+
+        .nav2-items{
+           justify-self: center;
+            .items-list{
+                justify-self: center;;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 20px;
+                list-style: none;
+            }
+        }
+    }
+}
+
+.header3{
+    width: 100%;
+    border: 1px solid black;
+    .nav3-container{
+        width: 80%;
+        margin:10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-container{
+            font-family: roboto mono;
+        }
+
+        .right-container{
+            display: flex;
+            flex-direction:row;
+            font-size: small;
+            font-family: roboto mono;
+        }
+    }
+}
+
+.header4{
+    width: 100%;
+    border-bottom: 1px solid black;
+    .nav4-container{
+        margin: 10px auto;
+        width: 70%; 
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .img-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+     .images{
+        margin: auto;
+        img{
+            height: 50px;
+            width: 50px;
+        }
+     }
+
+     .desc{
+        font-size: x-small;
+     }
+    }
+}
+}
