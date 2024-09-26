@@ -113,7 +113,7 @@ body{
     display: flex;
     height:70px;
     
-    background-color:rgb(211, 211, 211);
+    background-color:#E2E3E5;
     font-size:18px;
     font-weight: 300;
     font-family:nunito, "Helvetica";
@@ -128,15 +128,35 @@ body{
         justify-content: space-evenly;
         margin: auto;
 
-        .nav2-items{
-           justify-self: center;
-            .items-list{
-                justify-self: center;;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                gap: 20px;
-                list-style: none;
+        & .items-list {
+            justify-self: center;;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 40px;
+            list-style: none;
+            
+            select {
+                border: none;
+                width: 15px;
+                background-color: #E2E3E5;
+            }
+
+            & a {
+                text-decoration: none;
+                color: black;
+            }
+            a:hover {
+                color: rgb(246, 38, 38);
+            }
+
+            & li {
+                transition: ransform 0.2s ease-in-out;
+                &:hover {
+                transform: scale(1.2);
+                color: rgb(20, 1, 1);
+                background-color: #E2E3E5;
+                }
             }
         }
     }
@@ -180,6 +200,11 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            &:hover{
+                background-color: #E2E3E5;
+                transform: scale(1.2);
+            }
             
      .images{
         margin: auto;
