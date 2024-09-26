@@ -1,0 +1,417 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+   
+    gap: 10px;
+
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        img{
+            width: 300px;
+          
+        }
+    }
+
+    .search-section{
+        border: 1px solid grey;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 52px;
+        
+
+        .dropdown-menu{
+           
+            display: flex;
+            align-items: center;
+            height: 50px;
+            border-radius: 10px;
+            #dropdown{
+                border: none;
+            }
+            margin: 5px 10px;
+
+         }
+
+         .search-bar{
+            display: flex;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+           }
+
+           .search-button{
+            button{
+                justify-self: flex-end;
+                align-self: center;
+                background: black;
+                color: white;
+                height: 49px;
+                padding: 4px 12px;
+                border-radius: 10px;
+                
+                
+            }
+           }
+        }
+
+         .icon-container{
+           justify-self: flex-end;
+           width: 100px;
+           display: flex;
+           flex-direction: row;
+          
+           
+        
+           .icon-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+           i{
+            transform: scale(1.3);
+           }
+         }
+
+    }
+   
+}
+}
+
+.header2 {
+    display: flex;
+    height:55px ;
+    background-color: #E2E3E5;
+    font-size:16px;
+    font-family: nunito, "Helvetica";
+
+    & .nav2-container {
+       
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+
+        & .nav2-items {
+           justify-self: center;
+
+            & .items-list {
+                justify-self: center;;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 40px;
+                list-style: none;
+                
+                select {
+                    border: none;
+                    width: 15px;
+                    background-color: #E2E3E5;
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover {
+                    color: rgb(246, 38, 38);
+                }
+
+                & li {
+                    transition: ransform 0.2s ease-in-out;
+                    &:hover {
+                    transform: scale(1.2);
+                    color: rgb(20, 1, 1);
+                    background-color: #E2E3E5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header3{
+    width: 100%;
+    border: 1px solid black;
+    .nav3-container{
+        width: 80%;
+        margin:10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .right-container{
+            display: flex;
+            flex-direction:row;
+        }
+    }
+}
+
+.header4{
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    .nav4-container{
+        margin: 10px auto;
+        width: 60%; 
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .img-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: ransform 0.2s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+                color: rgb(20, 1, 1);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+     .images{
+        margin: auto;
+        img{
+            height: 50px;
+            width: 50px;
+        }
+     }
+
+     .desc{
+        font-size: x-small;
+     }
+    }
+}
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 10px;
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    /*align-content: center;*/
+  }
+  
+.product-card {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+align-items: center;
+overflow: hidden;
+text-align: center;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+transform: scale(1.05);
+}
+
+.product-card img {
+max-width: 100%;
+height: auto;
+}
+
+.product-name {
+font-size: 14px;
+margin: 10px 0;
+color: #333;
+}
+
+.price {
+font-weight: bold;
+font-size: 16px;
+color: #000;
+}
+
+.sold-out {
+color: red;
+font-size: 12px;
+margin-left: 5px;
+}
+
+.out-of-stock img {
+opacity: 0.5;
+}
+
+.second-last-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: rgb(249, 247, 244);
+}
+
+.read-more-less {
+    color: rgb(28, 128, 0);
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-top: auto;
+    
+}
+
+
+
+.bottom-container{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    max-width: 1920px;
+   
+
+    .inner-bottom-upper-container{
+     width: 70%;
+     
+     margin: auto;
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     gap: 50px;
+     padding: 20px auto;
+
+
+     .sub-containers{
+
+        flex: 1;
+     
+     .heading{
+        font-family: roboto mono;
+     }
+
+     
+     
+     .items-container{
+        
+        font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 30px;
+        font-size:smaller;
+
+        .icon-content{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            
+            a{
+                color: white;
+            }
+        }
+
+        .social-media-icons{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0px; 
+        
+            i{
+                border: 1px solid white;
+                padding: 5px;
+                border-radius: 50%;
+            }
+        }
+
+        .email-button{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid white;
+            width: fit-content;
+            padding: 1px;
+            border-radius: 5px;
+    
+            input{
+                border: none;
+                height: 100%;
+                font-size: small;
+               text-align: center;
+                width: fit-content;
+                background-color: black;
+            }
+            button{
+                height: 100%;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: hidden;
+            }
+         }
+     }
+
+     .follow-instruction{
+        line-height: 20px;
+        font-family: roboto mono;
+        margin-top: 20px;
+     }
+     
+    }
+    }
+
+    .inner-bottom-lower-container{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        gap: 20px;
+       
+
+        h3{
+            font-family: roboto mono;
+        }
+
+        a{
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+}
+}
+
+
+footer{
+    width: 100%;
+    .footer-inner-container{
+        width: 70%;
+        margin: auto;
+        padding: 5px;
+    p{
+        text-align: center;
+        font-size: smaller;
+    }
+    }
+}
