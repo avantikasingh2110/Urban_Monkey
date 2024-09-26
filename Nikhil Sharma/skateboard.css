@@ -168,8 +168,8 @@ body{
     margin-bottom: 30px;
     .nav4-container{
         margin: 10px auto;
-        width: 70%; 
-        gap: 20px;
+        width: 50%; 
+        gap: 10px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -189,6 +189,7 @@ body{
 
      .desc{
         font-size: x-small;
+        text-align: center;
      }
     }
 }
