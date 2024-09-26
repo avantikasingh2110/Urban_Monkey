@@ -196,6 +196,7 @@ body{
         flex-direction: row;
         justify-content: space-evenly;
         .img-text{
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -205,19 +206,25 @@ body{
                 background-color: #E2E3E5;
                 transform: scale(1.2);
             }
+
+           
             
      .images{
         margin: auto;
+        padding: 10px;
         img{
             height: 50px;
             width: 50px;
         }
+       
      }
 
      .desc{
         font-size: x-small;
      }
     }
+
+    
 }
 }
 
