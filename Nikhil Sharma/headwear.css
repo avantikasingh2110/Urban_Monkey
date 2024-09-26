@@ -110,7 +110,7 @@ body{
     display: flex;
     height:70px ;
     
-    background-color:rgb(211, 211, 211);
+    background-color:#E2E3E5;
     font-size:18px;
     font-family: nunito, "Helvetica Neue", "Helvetica";
     font-weight: 300;
@@ -133,7 +133,17 @@ body{
                 justify-content: space-evenly;
                 gap: 20px;
                 list-style: none;
-            }
+             
+                select {
+                    border: hidden;
+                   
+                    width: 15px;
+                    background-color: #E2E3E5;
+                    
+                   
+                }
+            
+        }
         }
     }
 }
