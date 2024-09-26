@@ -135,12 +135,25 @@ body{
                 list-style: none;
              
                 select {
-                    border: hidden;
-                   
+                    border: none;
                     width: 15px;
                     background-color: #E2E3E5;
-                    
-                   
+                }
+    
+                & a {
+                    text-decoration: none;
+                    color: black;
+                }
+               
+    
+                & li {
+                    transition: ransform 0.2s ease-in-out;
+                    &:hover {
+                    transform: scale(1.2);
+                    color: rgb(246, 38, 38);
+                    background-color: #E2E3E5;
+                    cursor: pointer;
+                    }
                 }
             
         }
@@ -188,9 +201,15 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            &:hover{
+                transform: scale(1.2);
+            }
             
      .images{
         margin: auto;
+
+        
         img{
             height: 50px;
             width: 50px;
@@ -262,9 +281,16 @@ body{
                 justify-content: center;
                 width: 280px;
                 margin: auto;
+                &:hover{
+                    transform: scale(1.1);
+                   
+                    
+                }
 
                 .card-img{
                     background-image: linear-gradient();
+
+                   
                     img{
                     width: 280px;
                     height:400px;
