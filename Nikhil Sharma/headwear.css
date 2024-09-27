@@ -9,20 +9,42 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    max-width: 100%;
+   
+   
 }
 
 
-.header{
+.main{
     width: 100%;
+    margin: auto;
+}
+
+.header{
+    width: 100% !important;
     display: flex;
     flex-direction: row;
-    
-   
     gap: 10px;
+
+   
 
 
 .navbar{
+
+    @media screen and (max-width:379px) {
+        justify-content: space-around;
+          }
+
+    .hemburger-menu,.search-logo{
+        display: none;
+        padding: 2px;
+
+        @media screen and (max-width:1018px) {
+        display: block;
+        }
+    }
+
+   
     width: 80%;
     margin: auto;
     padding: 10px;
@@ -31,12 +53,25 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width:1018px) {
+        width: 100%;
+        }
+
+
     .logo{
         img{
             width: 300px;
           
         }
+
+        @media screen and (max-width:1018px) {
+           transform: scale(0.7); 
+           margin: auto;
+            }
     }
+
+    
 
     .search-section{
         border: 1px solid grey;
@@ -45,6 +80,10 @@ body{
         flex-direction: row;
         align-items: center;
         height: 52px;
+
+        @media screen and (max-width:1018px) {
+            display:none;
+            }
         
 
         .dropdown-menu{
@@ -69,14 +108,17 @@ body{
            }
 
            .search-button{
+           
             button{
                 justify-self: flex-end;
-                align-self: center;
+                
                 background: black;
                 color: white;
-                height: 49px;
+                height:50px;
                 padding: 4px 12px;
                 border-radius: 10px;
+                margin: auto;
+                border: hidden;
                 
                 
             }
@@ -98,12 +140,34 @@ body{
             gap: 15px;
            i{
             transform: scale(1.3);
-           }
+            
+           }       
+         
          }
+         @media screen and (max-width:1018px) {
+            display: none;
+           
+            }
+    
 
     }
+    .cart-div{
+        display: none;
+
+        @media screen and (max-width:1018px) {
+            display: block;
+           
+            }
+       }
+
+    
    
 }
+@media screen and (max-width:1018px) {
+    justify-content: space-between;
+    max-width: 100%;
+}
+
 }
 
 .header2{
@@ -114,6 +178,10 @@ body{
     font-size:18px;
     font-family: nunito, "Helvetica Neue", "Helvetica";
     font-weight: 300;
+
+    @media screen and (max-width:1018px){
+        display: none;
+    }
 
     .nav2-container{
        
@@ -150,8 +218,8 @@ body{
                     transition: ransform 0.2s ease-in-out;
                     &:hover {
                     transform: scale(1.2);
-                    color: rgb(246, 38, 38);
                     background-color: #E2E3E5;
+                    color: rgb(246, 38, 38);
                     cursor: pointer;
                     }
                 }
@@ -189,6 +257,10 @@ body{
     width: 100%;
     border-bottom: 1px solid black;
     margin-bottom: 30px;
+
+    @media screen and (max-width:1018px){
+        display:none;
+    }
     .nav4-container{
         margin: 10px auto;
         width: 70%; 
@@ -368,7 +440,12 @@ body{
 
     
     .bottom-container{
-        width: 100%;
+        width: 100% !important;
+    
+       
+        
+        
+        margin: auto;
         padding: 10px;
         background-color: black;
         color: white;
@@ -385,6 +462,10 @@ body{
          justify-content: space-evenly;
          gap: 50px;
          padding: 20px auto;
+    
+         @media screen and (max-width:1018px){
+            flex-direction: column;
+        }
     
     
          .sub-containers{
@@ -483,7 +564,7 @@ body{
     
     
     footer{
-        width: 100%;
+        width: 100% !important;
         .footer-inner-container{
             width: 70%;
             margin: auto;
@@ -494,3 +575,5 @@ body{
         }
         }
     }
+    
+    

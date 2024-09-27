@@ -234,6 +234,8 @@ body{
         justify-content: space-between;
         align-items: center;
 
+
+
         .left-container{
             font-family: roboto mono;
         }
@@ -244,6 +246,12 @@ body{
             font-family: roboto mono;
             font-size: small;
         }
+
+        @media screen and (max-width: 1018px){
+
+            width: 100%;
+             
+         }
     }
 }
 
