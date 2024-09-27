@@ -9,12 +9,19 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    max-width: 100%;
+   
+   
 }
 
 
-.header{
+.main{
     width: 100%;
+    margin: auto;
+}
+
+.header{
+    width: 100% !important;
     display: flex;
     flex-direction: row;
     
@@ -23,6 +30,17 @@ body{
 
 
 .navbar{
+
+    .hemburger-menu,.search-logo{
+        display: none;
+        padding: 2px;
+
+        @media screen and (max-width:1018px) {
+        display: block;
+        }
+    }
+
+   
     width: 80%;
     margin: auto;
     padding: 10px;
@@ -36,6 +54,11 @@ body{
             width: 300px;
           
         }
+
+        @media screen and (max-width:1018px) {
+           transform: scale(0.7); 
+           margin: auto;
+            }
     }
 
     .search-section{
@@ -45,6 +68,10 @@ body{
         flex-direction: row;
         align-items: center;
         height: 52px;
+
+        @media screen and (max-width:1018px) {
+            display:none;
+            }
         
 
         .dropdown-menu{
@@ -101,12 +128,40 @@ body{
             gap: 15px;
            i{
             transform: scale(1.3);
+            
            }
+          
+           @media screen and (max-width:1018px) {
+            display: none;
+           
+            }
+
+           
+         
          }
 
+         .cart-div{
+            display: none;
+
+            @media screen and (max-width:1018px) {
+                display: block;
+               
+                }
+           }
+
+        
+
+
+
     }
+    
    
 }
+@media screen and (max-width:1018px) {
+    justify-content: space-between;
+    max-width: 100%;
+}
+
 }
 
 .header2{
@@ -117,6 +172,12 @@ body{
     font-size:18px;
     font-weight: 300;
     font-family:nunito, "Helvetica";
+
+    @media screen and (max-width: 1018px){
+
+        display: none;
+        
+    }
 
 
     .nav2-container{
@@ -163,7 +224,7 @@ body{
 }
 
 .header3{
-    width: 100%;
+    width: 100% !important;
     border: 1px solid black;
     .nav3-container{
         width: 80%;
@@ -187,7 +248,13 @@ body{
 }
 
 .header4{
-    width: 100%;
+    width: 100% !important;
+    @media screen and (max-width: 1018px){
+
+        display: none;
+        
+    }
+
     .nav4-container{
         margin: 10px auto;
         width: 60%; 
@@ -229,7 +296,7 @@ body{
 }
 
 .watch-image{
-    width: 100%;
+    width: 100% !important;
     img {
        height: auto;
        width: 100vw;
@@ -240,7 +307,7 @@ body{
 
 
 .form-container{
-    width: 100%;
+    width: 100% !important;
 
     .form-inner-container{
         width: 50%;
@@ -309,20 +376,25 @@ body{
 }
 
 .watch-section{
-      width: 100%;
+      max-width: 100% !important;
+      
 
     .inner-watch-container{
-        margin:auto;
-        width: 80%;
-        min-width: 1000px;
+       
+       max-width: 80%;
+       margin: auto;
         display: flex;
         flex-direction: column;
         font-family: roboto mono, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 10px;
+  
+  
+      
+  
         
      
         .filter-section{
-            width: 100%;
+            width: 100% !important;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -350,10 +422,13 @@ body{
             width: 80%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             margin: auto;
             gap: 5px;
+
+            
 
             .card{
                 &:hover{
@@ -370,6 +445,7 @@ body{
                .card-img>img{
                     width: 280px;
                     height: 340px;
+
                     
                 }
 
@@ -406,26 +482,42 @@ body{
 }
 
 .second-last-container {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
     height: 100px;
     background-color: rgb(249, 247, 244);
+
+    .read-more-less-upper-container{
+        width: 70%;
+        height: 100px;
+        margin: 10px auto;
+        
+    }
+
+    .read-more-less {
+        color: rgb(28, 128, 0);
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        margin-top: auto;
+        
+    }
+
+
 }
 
-.read-more-less {
-    color: rgb(28, 128, 0);
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    margin-top: auto;
-    
-}
+
 
 
 
 .bottom-container{
-    width: 100%;
+    width: 100% !important;
+
+   
+    
+    
+    margin: auto;
     padding: 10px;
     background-color: black;
     color: white;
@@ -442,6 +534,10 @@ body{
      justify-content: space-evenly;
      gap: 50px;
      padding: 20px auto;
+
+     @media screen and (max-width:1018px){
+        flex-direction: column;
+    }
 
 
      .sub-containers{
@@ -540,7 +636,7 @@ body{
 
 
 footer{
-    width: 100%;
+    width: 100% !important;
     .footer-inner-container{
         width: 70%;
         margin: auto;
@@ -551,3 +647,4 @@ footer{
     }
     }
 }
+
