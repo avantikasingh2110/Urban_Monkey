@@ -203,7 +203,7 @@ body{
             align-items: center;
 
             &:hover{
-                background-color: #E2E3E5;
+        
                 transform: scale(1.2);
             }
 
